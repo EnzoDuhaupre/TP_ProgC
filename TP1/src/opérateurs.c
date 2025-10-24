@@ -5,16 +5,26 @@ int main() {
     int a = 16;
     int b = 3;
 
-    // Opérateurs arithmétiques
-    printf("Addition : %d + %d = %d\n", a, b, a + b);
-    printf("Soustraction : %d - %d = %d\n", a, b, a - b);
-    printf("Multiplication : %d * %d = %d\n", a, b, a * b);
-    printf("Division : %d / %d = %d\n", a, b, a / b);
-    printf("Modulo : %d %% %d = %d\n", a, b, a % b);
+    int addition = a + b;
+    int soustraction = a - b;
+    int multiplication = a * b;
+    float division = (float)a / b;
 
-    // Opérateurs de comparaison
-    printf("a est égal à b : %s\n", (a == b) ? "true" : "false");
-    printf("a est supérieur à b : %s\n", (a > b) ? "true" : "false");
+    bool egalite = (a == b);
+    bool superieur = (a > b);
+
+    printf("Valeurs initiales : a = %d, b = %d\n\n", a, b);
+
+    printf("Addition de a et b : %d + %d = %d\n", a, b, addition);
+    printf("Soustraction de b de a : %d - %d = %d\n", a, b, soustraction);
+    printf("Multiplication de a par b : %d * %d = %d\n", a, b, multiplication);
+    printf("Division de a par b : %d / %d = %.2f\n", a, b, division);
+    printf("Modulo de a par b (reste de la division) : %d %% %d = %d\n\n", a, b, modulo); 
+
+    printf("a est-il égal à b ? %s\n", egalite ? "vrai" : "faux");
+    printf("a est-il supérieur à b ? %s\n", superieur ? "vrai" : "faux");
 
     return 0;
 }
+
+
