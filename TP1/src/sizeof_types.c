@@ -1,35 +1,64 @@
 #include <stdio.h>
 
 int main() {
-    // i. char
-    printf("sizeof(char): %zu octets\n", sizeof(char));
-    printf("sizeof(signed char): %zu octets\n", sizeof(signed char));
-    printf("sizeof(unsigned char): %zu octets\n", sizeof(unsigned char));
+    // Variables de type char
+    char signed_char = -100;
+    unsigned char unsigned_char = 200;
 
-    // ii. short
-    printf("sizeof(short): %zu octets\n", sizeof(short));
-    printf("sizeof(unsigned short): %zu octets\n", sizeof(unsigned short));
+    // Variables de type short
+    short signed_short = -15000;
+    unsigned short unsigned_short = 45000;
 
-    // iii. int
-    printf("sizeof(int): %zu octets\n", sizeof(int));
-    printf("sizeof(unsigned int): %zu octets\n", sizeof(unsigned int));
+    // Variables de type int
+    int signed_int = -2147483647;
+    unsigned int unsigned_int = 4294967295U;
 
-    // iv. long int
-    printf("sizeof(long int): %zu octets\n", sizeof(long int));
-    printf("sizeof(unsigned long int): %zu octets\n", sizeof(unsigned long int));
+    // Variables de type long int
+    long int signed_long_int = -9223372036854775807L;
+    unsigned long int unsigned_long_int = 18446744073709551615UL;
 
-    // v. long long int
-    printf("sizeof(long long int): %zu octets\n", sizeof(long long int));
-    printf("sizeof(unsigned long long int): %zu octets\n", sizeof(unsigned long long int));
+    // Variables de type long long int
+    long long int signed_long_long_int = -9223372036854775807LL;
+    unsigned long long int unsigned_long_long_int = 18446744073709551615ULL;
 
-    // vi. float
-    printf("sizeof(float): %zu octets\n", sizeof(float));
+    // Variables de type float
+    float float_var = 3.1415926535f;
 
-    // vii. double
-    printf("sizeof(double): %zu octets\n", sizeof(double));
+    // Variables de type double
+    double double_var = 3.141592653589793238;
 
-    // viii. long double
-    printf("sizeof(long double): %zu octets\n", sizeof(long double));
+    // Variables de type long double
+    long double long_double_var = 3.141592653589793238462643383279L;
+
+    // Affichage des valeurs des variables de type char
+    printf("char (signed): %d\n", signed_char);
+    printf("unsigned char: %u\n", unsigned_char);
+
+    // Affichage des valeurs des variables de type short
+    printf("short (signed): %d\n", signed_short);
+    printf("unsigned short: %u\n", unsigned_short);
+
+    // Affichage des valeurs des variables de type int
+    printf("int (signed): %d\n", signed_int);
+    printf("unsigned int: %u\n", unsigned_int);
+
+    // Affichage des valeurs des variables de type long int
+    printf("long int (signed): %ld\n", signed_long_int);
+    printf("unsigned long int: %lu\n", unsigned_long_int);
+
+    // Affichage des valeurs des variables de type long long int
+    printf("long long int (signed): %lld\n", signed_long_long_int);
+    printf("unsigned long long int: %llu\n", unsigned_long_long_int);
+
+    // Affichage des valeurs des variables de type float
+    printf("float: %f\n", float_var);
+
+    // Affichage des valeurs des variables de type double
+    printf("double: %lf\n", double_var);
+
+    // Affichage des valeurs des variables de type long double
+    printf("long double: %Lf\n", long_double_var);
 
     return 0;
 }
+
