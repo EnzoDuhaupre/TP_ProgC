@@ -1,5 +1,5 @@
 int main() {
-    // Définition des chaînes sources et des espaces mémoire pour résultats
+    
     char source1[] = {'H', 'e', 'l', 'l', 'o', '\0'};
     char source2[] = {'W', 'o', 'r', 'l', 'd', '!', '\0'};
     char copie[100];
@@ -31,3 +31,4 @@ int main() {
 
     return 0;
 }
+
