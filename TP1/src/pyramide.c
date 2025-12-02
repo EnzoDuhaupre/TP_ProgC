@@ -23,7 +23,7 @@ int main() {
         printf("\n");
     }
 
-    printf("\nPyramide terminee.\n");
+    printf("La Pyramide est terminee.");
 
     return 0;
 }
